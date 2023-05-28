@@ -26,16 +26,21 @@ class PostsController extends Controller
     public function store(Request $request)
     {
         //dd($request);
-        $request->validate([
-            'description'=>'required',
+        $request->validate([ //checking the file size and extension
             'image'=>'mimes:jpg,png,jpeg,gif,mp4|max:25600'
         ]);
 
         if (!empty($request->image)) {
+
             $imageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
 
             $request->image->move(public_path('images'), $imageName);
-        } else $imageName = NULL;
+        } else {
+            $imageName = NULL;
+            $request->validate([ //checking if the description is inserted
+                'description'=>'required|max:150',
+        ]);
+    }
 
 
 

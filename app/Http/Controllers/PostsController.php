@@ -38,7 +38,7 @@ class PostsController extends Controller
         } else {
             $imageName = NULL;
             $request->validate([ //checking if the description is inserted
-                'description'=>'required|max:150',
+                'description'=>'required|max:256',
         ]);
     }
 

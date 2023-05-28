@@ -26,6 +26,28 @@ During the project, there were four developmental iterations, each having 2 to 3
   - Primary sorting based on the rating (amount of "likes" given) for each comment;
   - In case of a matching rating, the oldest comment will be displayed first, with newest comments displayed last.
 
+### Installation
+
+For the purposes of previewing this project, here are the steps (this is for a machine running on Windows, though I'm sure the steps for a Linux OS should be similar, if not identical):
+- Download the program [XAMPP](https://www.apachefriends.org/download.html).
+  - In the XAMPP file folder, navigate to *htdocs*, delete all existing files;
+  - Copy the repository in the aforementioned folder;
+  - In the *Apache* module row, select Config and select the first option (*Apache (httpd.conf)*);
+  - Find the *DocumentRoot* portion of the text file, and change the path to the repository folder (should look like <i>../xampp/htdocs/SftwArchProject</i>);
+  - Start the Apache and MySQL modules.
+- Open the CMD command line, and enter the following commands:
+  - `composer install`
+  - `copy .env.example .env`
+  - `php artisan key:generate`
+  - `php artisan migrate`
+  - `php artisan storage:link`
+  - `php artisan serve`
+- Open another CMD line and enter the following commands:
+  - `npm install`
+  - `npm run dev`
+
+Now the website should be hosted locally, the views displayed correctly and the database should be created and linked.
+
 ### Diagrams
 
 #### The Activity Diagram

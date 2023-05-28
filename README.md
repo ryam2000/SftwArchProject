@@ -33,7 +33,7 @@ For the purposes of previewing this project, here are the steps (this is for a m
   - In the XAMPP file folder, navigate to *htdocs*, delete all existing files;
   - Copy the repository in the aforementioned folder;
   - In the *Apache* module row, select Config and select the first option (*Apache (httpd.conf)*);
-  - Find the *DocumentRoot* portion of the text file, and change the path to the repository folder (should look like <i>../xampp/htdocs/SftwArchProject</i>);
+  - Find the *DocumentRoot* portion of the text file, and change the path to the repository folder (should look like **DocumentRoot "../xampp/htdocs/SftwArchProject**"); do the same thing with the *Directory* line right below it;
   - Start the Apache and MySQL modules.
 - Open the CMD command line, and enter the following commands:
   - `composer install`

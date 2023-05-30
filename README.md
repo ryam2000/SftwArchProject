@@ -35,14 +35,14 @@ For the purposes of previewing this project, here are the steps (this is for a m
   - In the *Apache* module row, select Config and select the first option (*Apache (httpd.conf)*);
   - Find the *DocumentRoot* portion of the text file, and change the path to the repository folder (should look like **DocumentRoot "../xampp/htdocs/SftwArchProject**"); do the same thing with the *Directory* line right below it;
   - Start the Apache and MySQL modules.
-- Open the CMD command line, and enter the following commands:
+- Open the CMD command line, change the directory to the StfwArchProject folder and enter the following commands:
   - `composer install` <- in case this command fails, check the bottom of this section (the part with the asterisk);
   - `copy .env.example .env`
   - `php artisan key:generate`
   - `php artisan migrate`
   - `php artisan storage:link`
   - `php artisan serve`
-- Open another CMD line and enter the following commands:
+- Open another CMD line, change the directory to the StfwArchProject folder and enter the following commands:
   - `npm install`
   - `npm run dev`
 

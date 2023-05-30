@@ -46,7 +46,7 @@ For the purposes of previewing this project, here are the steps (this is for a m
   - `npm install`
   - `npm run dev`
 
-Now the website should be hosted locally, the views displayed correctly and the database should be created and linked.
+Now the website should be hosted locally (site accessible via http://localhost:8000, the database via http://localhost/phpmyadmin/), the views displayed correctly and the database should be created and linked.
 
 \* If the `composer install` command doesn't work properly, open XAMPP, then turn the *Apache* module off and in the Config section select *PHP (php.ini)*, navigate to the part where it says `;extension=zip` and change it to `extension=zip`.
 

@@ -36,7 +36,7 @@ For the purposes of previewing this project, here are the steps (this is for a m
   - Find the *DocumentRoot* portion of the text file, and change the path to the repository folder (should look like **DocumentRoot "../xampp/htdocs/SftwArchProject**"); do the same thing with the *Directory* line right below it;
   - Start the Apache and MySQL modules.
 - Open the CMD command line, and enter the following commands:
-  - `composer install`
+  - `composer install` <- in case this command fails, check the bottom of this section (the part with the asterisk);
   - `copy .env.example .env`
   - `php artisan key:generate`
   - `php artisan migrate`
@@ -47,6 +47,8 @@ For the purposes of previewing this project, here are the steps (this is for a m
   - `npm run dev`
 
 Now the website should be hosted locally, the views displayed correctly and the database should be created and linked.
+
+* If the `composer install` command doesn't work properly, open XAMPP, then under the *Apache* module row select *PHP (php.ini)*, navigate to the part where it says `;extension=zip` and change it to `extension=zip`.
 
 ### Diagrams
 

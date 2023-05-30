@@ -48,7 +48,7 @@ For the purposes of previewing this project, here are the steps (this is for a m
 
 Now the website should be hosted locally, the views displayed correctly and the database should be created and linked.
 
-* If the `composer install` command doesn't work properly, open XAMPP, then under the *Apache* module row select *PHP (php.ini)*, navigate to the part where it says `;extension=zip` and change it to `extension=zip`.
+\* If the `composer install` command doesn't work properly, open XAMPP, then under the *Apache* module row select *PHP (php.ini)*, navigate to the part where it says `;extension=zip` and change it to `extension=zip`.
 
 ### Diagrams
 
